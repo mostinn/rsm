@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Awards</title>
+
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Magnus Orn Stefansson</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="awards.html">Awards</a>
+</li>
+<li>
+  <a href="affiliations.html">Affiliations</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><em>Awards</em></h1>
+
+</div>
+
+
+<html lang="en">
+<head>
+<title>
+Table Logo
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_logo">
+
+</div>
+<table class="table_logo">
+<tr>
+<th>
+<img src="SourceDocuments/Harvard_Logo.png" alt="Harvard_logo" onclick="window.open('https://www.harvard.edu','_blank')" class="img_awrds">
+</th>
+<th>
+<img src="SourceDocuments/Templeton_Logo.svg" alt="Templeton_logo" onclick="window.open('https://www.templeton.org/','_blank')" class="img_awrds">
+</th>
+</tr>
+</table>
+<table class="table_logo">
+<tr>
+<th>
+<img src="SourceDocuments/PaulAllen_Logo.png" alt="Allen_logo" style="width:auto;height:25px;" onclick="window.open('https://pgafamilyfoundation.org/','_blank')" class="img_awrds">
+</th>
+<th>
+<img src="SourceDocuments/NIH_Logo.png" alt="NIH logo" onclick="window.open('https://www.nih.gov','_blank')" class="img_awrds">
+</th>
+</tr>
+</table>
+</body>
+<h2>
+Awarded to the Reich Lab, Harvard University – Various ancient human DNA
+projects
+</h2>
+<ul>
+<li>
+National Institute of Health, USA
+</li>
+<li>
+John Templeton Foundation, USA
+</li>
+<li>
+Paul Allen Family Foundation, USA
+</li>
+<li>
+Private funding, USA and EU
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/GovernmentOfIceland_Logo.png" onclick="window.open('https://www.government.is/ministries/ministry-of-food-agriculture-and-fisheries/','_blank')" class="img_awrds"></p>
+<h2>
+The Government of Iceland, Ministry of Food, Agriculture and Fisheries
+</h2>
+<ul>
+<li>
+Examination of the feasibility of obtaining products from heterotrophic
+microalgae (Thraustochytriaceae) in culture
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<table class="table_logo">
+<tr>
+<th>
+<img src="SourceDocuments/Matvaelasjodur_Logo.png" onclick="window.open('https://www.stjornarradid.is/verkefni/atvinnuvegir/matvaeli-og-matvaelaoryggi/matvaelasjodur/','_blank')" class="img_awrds">
+</th>
+<th>
+<img src="SourceDocuments/Avs_Logo.jpeg" class="img_awrds">
+</th>
+</tr>
+</table>
+<h2>
+R&amp;D Fund of the Government of Iceland
+</h2>
+<ul>
+<li>
+Production of high-value products from macro algae
+</li>
+<li>
+Examination of the viability of obtaining products from heterotrophic
+microalgae (Thraustochytriaceae) in culture
+</li>
+<li>
+Chemically controlled lipogenesis of microalgae for increased product
+yield
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/Rannis_Logo.png" onclick="window.open('https://www.en.rannis.is/','_blank')" class="img_awrds"></p>
+<h2>
+The Icelandic Center for Research
+</h2>
+<ul>
+<li>
+Utilization of by-products from fisheries and agriculture to formulate
+media for heterotrophic microalgae
+</li>
+<li>
+Scaling up of cultures for the production of polyunsaturated omega-3
+fatty acids using heterotrophic microalgae
+</li>
+<li>
+Several grants for laboratory equipment and infrastructure
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/Hafro_Logo.png" onclick="window.open('https://www.hafogvatn.is/','_blank')" class="img_awrds"></p>
+<h2>
+Marine and Freshwater Institute
+</h2>
+<ul>
+<li>
+Several grants for research on the population genetics and the evolution
+of redfish
+</li>
+<li>
+The use of molecular genetics in the breeding of halibut for culture
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/SSNV_Logo.png" onclick="window.open('https://www.ssnv.is/','_blank')" class="img_awrds"></p>
+<h2>
+SSNV of the Regional Government of Northwest Iceland
+</h2>
+<ul>
+<li>
+Economic Development Fund
+<ul>
+<li>
+Utilization of by-products from fish processing for media formulation
+for heterotrophic microalgae
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+Cultural Development
+<ul>
+<li>
+Publication of Iceview Magazine, Volume 1
+</li>
+<li>
+Publication of Iceview Magazine, Volume 2
+</li>
+<li>
+Publication of Iceview Magazine, Volume 3
+</li>
+</ul>
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/UCC_Logo.png" onclick="window.open('https://www.ucc.ie/','_blank')" class="img_awrds"></p>
+<h2>
+University College Cork
+</h2>
+<ul>
+<li>
+Ph.D. fully funded
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<html lang="en">
+<head>
+<title>
+Table Logo
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_logo">
+
+</div>
+<table class="table_logo">
+<tr>
+<th>
+<img src="SourceDocuments/EU3_Logo.jpeg" onclick="window.open('https://cordis.europa.eu/article/id/9008-training-and-mobility-of-researchers-training-through-research','_blank')" class="img_awrds">
+</th>
+<th>
+<img src="SourceDocuments/Aquatt_Logo.png" onclick="window.open('https://cordis.europa.eu/article/id/9008-training-and-mobility-of-researchers-training-through-research','_blank')" class="img_awrds">
+</th>
+</tr>
+</table>
+</body>
+<h2>
+European Commission
+</h2>
+<ul>
+<li>
+EU-COMETT Program, University Enterprise Training Partnership, EU
+<ul>
+<li>
+Student grant
+</li>
+</ul>
+</li>
+<li>
+Training and Mobility of Researcher Program (TMR) of the EU
+<ul>
+<li>
+Student grant
+</li>
+</ul>
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/Bioval_Logo.svg" onclick="window.open('https://bioval.org/','_blank')" class="img_awrds"></p>
+<h2>
+Bioval, Regional Government of Valencia, Spain&lt;
+</h2>
+<ul>
+<li>
+Development of biosensors
+</li>
+</ul>
+<div class="line">
+
+</div>
+<p><br></br></p>
+<p><img src="SourceDocuments/Torres_Logo.png" onclick="window.open('https://investigacion.us.es/convocatorias/ver/135/0#:~:text=El%20objeto%20del%20Programa%20Torres,con%20su%20preparaci%C3%B3n%20y%20titulaci%C3%B3n.','_blank')" class="img_awrds"></p>
+<h2>
+Programa Torres Quevedo, Government of Spain
+</h2>
+<ul>
+<li>
+Development of biosensors
+</li>
+</ul>
+<div class="line">
+
+</div>
+<br></br>
+</html>
+<!-- Footer: -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"          href="Styles.css">
+<title>
+My Website
+</title>
+</head>
+<body>
+<!-- Your website content goes here -->
+<footer>
+<p>
+<a href="mailto:mostinn@gmail.com"><b>Contact me!</b></a>
+</p>
+<p>
+© 2024 Magnús Örn Stefánsson
+</p>
+</footer>
+</body>
+</html>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

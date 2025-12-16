@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }
+       summary { font-size: 18px; }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Magnus Orn Stefansson</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+<li>
+  <a href="research.html">Research</a>
+</li>
+<li>
+  <a href="awards.html">Awards</a>
+</li>
+<li>
+  <a href="affiliations.html">Affiliations</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><em>Resume</em></h1>
+
+</div>
+
+
+<html lang="en">
+<h2>
+Experience
+</h2>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+Experience
+</title>
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_rsm">
+
+</div>
+<table class="table_rsm">
+<tr>
+<td>
+<img src="SourceDocuments/Freymars-regeneration-cycle-only.jpg" onclick="window.open('https://www.freymarbiotech.com/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Founder &amp; General Manager,</b> Freymar LLC; Sturbridge, MA</summary>
+• Developed graduate-level courses in Bioprocessing &amp; Biomanufacturing and Synthetic Biology &amp; Genome Engineering for Brandeis University<br>
+• Developed a <a href="https://mostinn.github.io/bioprocessing-app/index.html" target="_blank">Bioprocessing Simulator</a> to provide a dynamic tool for teaching advanced statistical bioprocess optimization.<br>
+• Consulting scientist on fisheries, resource management, sustainability, and climate change.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Exponent_Logo.jpeg" onclick="window.open('https://www.exponent.com/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Managing Scientist,</b> Exponent Inc.; Natick, MA</summary>
+• Consulting scientist on data analysis, natural resources, and sustainability.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Harvard_Logo.png" onclick="window.open('https://www.harvard.edu/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Research Manager,</b> Harvard University; Cambridge, MA</summary>
+• Oversaw and managed grant applications, management reports, national and international collaborative agreements, budget forecasts, and reporting to facilitate groundbreaking research on ancient DNA and microbiology<br>
+&nbsp;&nbsp;- NIH, NSF, John Templeton Foundation, the Allen Family Foundation, and private funders<br>
+• Provided day-to-day support, project management, and strategic consulting on staffing and task delegation for the lab director, two laboratories, and their concurrent initiatives.<br>
+• Synthesized research findings on archeological samples into reports sent to a large network of collaborators and international funders including the New Caledonian Government.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/nList-Only_Logo.png" onclick="window.open('https://www.stackmagazines.com/literature/iceview-magazine-explores-travel-art-literature/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Consulting Scientist,</b> nList; Sturbridge, MA</summary>
+• Research into chemically-induced microbial lipogenesis for the production of omega-3 FAs utilizing waste biomass from fisheries and agriculture.<br>
+• Examined the thermal adaptation of microbes to climate change from a global perspective.<br>
+• Investigated the impact of past glaciation on the speciation and evolutionary history of marine microbes.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Iceview_Logo.png" onclick="window.open('https://www.stackmagazines.com/literature/iceview-magazine-explores-travel-art-literature/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Founder &amp; Managing Editor,</b> Iceview Magazine; Iceland</summary>
+• Founded and managed a multidisciplinary print publication of literature, science, and art.<br>
+• Oversaw Iceview Magazine's funding and its distribution to seven countries.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Unak_Logo.png" onclick="window.open('https://www.unak.is/english','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Research Fellow,</b> University of Akureyri &amp; BioPol Ltd.; Iceland</summary>
+• Program manager and principal investigator of a microbiology research lab specializing in the optimization of upstream bioprocess and fermentation conditions for heterotrophic microbes.<br>
+• Developed novel microbial media based on discarded by-products from fisheries and agriculture.<br>
+• Investigated the commercialization of value-added products from microbes via feasibility studies on the production of healthy omega-3 FAs.<br>
+• Researched the evolutionary history of marine microbes.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Biosensores_Logo.png" onclick="window.open('https://www.biosensores.com/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Chief Scientific Officer,</b> Biosensores, S.L.; Spain</summary>
+• Led the R&D of DNA-based affinity biosensors used to detect pathogenic bacteria.<br>
+• Conducted financial management, market research, and pro forma income statements, balance sheets, fund usage, and valuation of company shares.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Landspitali_Logo.jpeg" onclick="window.open('https://www.landspitali.is/default.aspx?pageid=deac0479-05aa-11e8-90f1-005056be0005','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Project Manager,</b> Office of the CEO, National University Hospital; Iceland</summary>
+• Conducted financial analyses using mathematical and statistical modeling and data mining to advise on hospital budget and payroll.<br>
+• Conducted surveys and statistical analyses to simulate the possible career paths of nursing professionals.<br>
+• Served as a liaison between the hospital's CEO and Iceland's Ministry of Finance on payroll matters.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/MFRI_Logo.png" onclick="window.open('https://www.hafogvatn.is/en','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Senior Scientist / Interim Head of Laboratory,</b> Marine and Freshwater Research Institute; Iceland</summary>
+• Principal investigator and interim population genetics laboratory director for Iceland's sole organization dedicated to the research of fishing quotas in Icelandic territorial waters.<br>
+• Advised the Government of Iceland, ICES, and IWC on natural resource management.<br>
+• Managed the progression of three large projects that were funded by the European Union.<br>
+• Investigated the influence of paleoclimate change on the evolutionary history of commercial fish species.<br>
+• Developed and led a five-year research strategy focused on the use of genetics in fisheries management and aquaculture.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/UCC_Logo.png" onclick="window.open('https://www.ucc.ie','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Research Associate,</b> University College Cork; Ireland</summary>
+• Project manager for Ireland's first successful marine fish hatchery.<br>
+• Oversaw a range of research projects covering various marine species e.g. turbot, halibut.
+</details>
+</td>
+</tr>
+</table>
+</body>
+<p><br></br></p>
+<div class="line">
+
+</div>
+<h2>
+Teaching and supervision
+<h2>
+<h3>
+Undergraduate and postgraduate supervisor
+</h3>
+<head>
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_rsm">
+
+</div>
+<table class="table_rsm">
+<tr>
+<td>
+<img src="SourceDocuments/Brandeis-logo.jpeg" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Brandeis University:</b> Curriculum Designer</summary>
+• <b>M.S. Natural Sciences & Business Management:</b> Curriculum development for MS in Biotechnology and Enterprise:<br>
+&nbsp;&nbsp;- Synthetic Biology & Genome Engineering<br>
+&nbsp;&nbsp;- Bioprocessing & Biomanufacturing<br>
+&nbsp;&nbsp;- Educational <a href="https://mostinn.github.io/bioprocessing-app/index.html" target="_blank">Bioprocessing Simulator</a>
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/Unak_Logo.png" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>University of Akureyri:</b> Faculty Advisor</summary>
+• <b>B.S. Natural Sciences:</b> Experimental and scale-up upstream bioprocessing; DOE; novel media development; microbial heterotrophic eukaryotes.<br>
+• <b>M.S. Natural Sciences:</b> Experimental upstream bioprocessing; DOE; novel media development; microbial heterotrophic eukaryotes; marine biotechnology; lipid extractions and analysis; statistical modeling.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/UCC_Logo.png" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>University College Cork:</b> Faculty Advisor</summary>
+• <b>B.S. Natural Sciences:</b> Zoology; flatfish biology; seawater recycling system for aquaculture.<br>
+• <b>M.S. Natural Sciences:</b> Aquaculture; feeding behavior and molecular genetics of flatfish; seawater recycling system for aquaculture.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/MFRI_Logo.png" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Marine & Freshwater Research Institute:</b> Faculty Advisor</summary>
+• <b>Technicians & Scientists:</b> Molecular and population genetics; data management.
+</details>
+</td>
+</tr>
+</table>
+<h3>
+Lectures
+</h3>
+<table class="table_rsm">
+<tr>
+<td>
+<img src="SourceDocuments/Unak_Logo.png" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>University of Akureyri:</b> Lecturer</summary>
+• <b>B.S. Natural Sciences:</b> Theory of evolution and genetics and their application in natural resource management.<br>
+• <b>M.S. Natural Sciences:</b> Biotechnology of microbial heterotrophic eukaryotes.<br>
+• <b>M.S. Business Management:</b> Measuring and managing knowledge assets in large corporations.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/UCC_Logo.png" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>University College Cork:</b> Lecturer</summary>
+• <b>B.S. Natural Sciences:</b> Biology of aquaculture species (flatfish).<br>
+• <b>M.S. Natural Sciences:</b> Flatfish farming.
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/FarskolinnNV.jpg" onclick="window.open('')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Adult Education Institute of the North West Iceland:</b> Lecturer</summary>
+• Spanish for beginners.
+</details>
+</td>
+</tr>
+</table>
+</body>
+<p><br></br></p>
+<div class="line">
+
+</div>
+<h2>
+Management advice
+</h2>
+<head>
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_rsm">
+
+</div>
+<table class="table_rsm">
+<tr>
+<td>
+<img src="SourceDocuments/Government-of-Iceland-Skjaldamerki_Logo.png" onclick="window.open('https://www.government.is/ministries/ministry-of-food-agriculture-and-fisheries/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Government of Iceland</b></summary>
+• Redfish (<i>Sebastes mentella</i> and <i>S. marinus</i>)
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/ICES_Logo.png" alt="ICES_logo" onclick="window.open('https://www.ices.dk/Pages/default.aspx','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>International Council for the Exploration of the Sea</b></summary>
+• Redfish (<i>Sebastes mentella</i> and <i>S. marinus</i>)
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/IWC_Logo.png" onclick="window.open('https://iwc.int/en/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>International Whaling Commission</b></summary>
+• Fin whale (<i>Balaenoptera physalus</i>) and minke whale (<i>Balaenoptera acutorostrata</i>)
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/nammco-logo.png" onclick="window.open('https://nammco.no/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>North Atlantic Marine Mammal Commission</b></summary>
+• Fin whale (<i>Balaenoptera physalus</i>)
+</details>
+</td>
+</tr>
+</table>
+</body>
+<p><br></br></p>
+<div class="line">
+
+</div>
+<h2>
+Education
+</h2>
+<head>
+<link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+<div class="table_rsm">
+
+</div>
+<table class="table_rsm">
+<tr>
+<td>
+<img src="SourceDocuments/UCC_Logo.png" onclick="window.open('https://www.ucc.ie','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>Ph.D.,</b> University College Cork; Ireland</summary>
+• <i>Molecular &amp; population genetics • Fish physiology</i>
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/RU_Logo.png" onclick="window.open('https://en.ru.is/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>MBA,</b> Reykjavik University; Iceland</summary>
+• <i>Business administration and management</i>
+</details>
+</td>
+</tr>
+<tr>
+<td>
+<img src="SourceDocuments/HI_Logo.png" onclick="window.open('https://english.hi.is/','_blank')" class="img_rsm">
+</td>
+<td>
+<details>
+<summary><b>B.Sc.,</b> University of Iceland; Iceland</summary>
+• <i>Biology</i>
+</details>
+</td>
+</tr>
+</table>
+</body>
+</html>
+<div class="line">
+
+</div>
+</html>
+<br></br> <!-- Footer: -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"          href="Styles.css">
+<title>
+My Website
+</title>
+</head>
+<body>
+<!-- Your website content goes here -->
+<footer>
+<p>
+<a href="mailto:mostinn@gmail.com"><b>Contact me!</b></a>
+</p>
+<p>
+© 2024 Magnús Örn Stefánsson
+</p>
+</footer>
+</body>
+</html>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
